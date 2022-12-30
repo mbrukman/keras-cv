@@ -25,7 +25,7 @@ class ZeroOut(BaseImageAugmentationLayer):
     """Zero out all entries, for testing purposes."""
 
     def __init__(self):
-        super(ZeroOut, self).__init__()
+        super().__init__()
 
     def augment_image(self, image, transformation=None, **kwargs):
         return 0 * image
